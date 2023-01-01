@@ -1,0 +1,41 @@
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+
+    .izq_footer {
+        padding-left: 20px;
+    }
+    .img_footer{
+        width: 180px;
+        height: auto;
+        margin-left: 20px;
+        margin-top: 20px;
+        
+    }
+    .parrafos_footer{
+        width: 30%;
+        text-align: center;
+    }
+    .parrafo_footer{
+        color: aliceblue;
+        padding-top: 23px;
+    }
+    .redes {
+        margin: 30px;
+    }
+    .logo_red{
+        width: 48px;
+        height: auto;
+        margin: 10px;
+        &:hover{
+            transform: scale(1.3);
+        }
+    }
+
+}
+

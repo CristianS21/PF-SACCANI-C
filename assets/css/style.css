@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.nav_naranja {
+  width: 100%;
+  height: 39px;
+  background-color: rgb(245, 177, 52);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16%;
+}
+
+.etiquetas_nav_naranja {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.centro_nav_naranja {
+  display: flex;
+  margin-top: 6px;
+  align-items: center;
+}
+
+.der_nav_naranja {
+  display: flex;
+  margin-top: 6px;
+  align-items: center;
+}
+
+h5 {
+  font-size: 15px;
+  margin-right: 15px;
+  margin-top: 6px;
+  color: rgb(17, 17, 17);
+  border-right: solid 1px red;
+  padding-right: 25px;
+}
+
+.img_nav {
+  height: 25px;
+  margin-right: 15px;
+}
+
+.nav_rojo {
+  background-color: red;
+  width: 100%;
+  height: 105px;
+  color: rgb(247, 246, 246);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_rojo .nav_izq {
+  margin-left: 25px;
+}
+.nav_rojo img {
+  width: 100px;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.nav_rojo h2 {
+  color: rgb(247, 246, 246);
+  text-shadow: 0 0 7px white;
+}
+.nav_rojo ul {
+  display: flex;
+  justify-content: end;
+}
+.nav_rojo li {
+  margin: 14px;
+  list-style: none;
+  padding: 6px;
+  border-radius: 3px;
+}
+.nav_rojo li:hover {
+  background-color: rgb(250, 191, 191);
+}
+
+header img {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 40px;
+}
+
+main {
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .contenedor {
+  height: 465px;
+  width: 350px;
+  -webkit-perspective: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .contenedor .tarjeta {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 2s;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 5px rgb(122, 120, 120);
+  border-radius: 10px;
+}
+main .contenedor .tarjeta h3 {
+  padding-top: 27px;
+}
+main .contenedor .tarjeta:hover {
+  transform: rotateY(180deg);
+}
+main .contenedor .lado {
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+}
+main .contenedor .frente img {
+  width: 250px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .contenedor .frente .calificacion {
+  width: 135px;
+}
+main .contenedor .frente h2 {
+  color: rgb(24, 23, 23);
+}
+main .contenedor .frente .bloque_clasificacion {
+  display: flex;
+  flex-direction: column;
+  font-size: 9px;
+  align-content: center;
+}
+main .contenedor .atras {
+  background-color: rgb(175, 175, 171);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .contenedor .atras li {
+  list-style: none;
+  color: rgb(247, 11, 11);
+}
+main .btn {
+  box-shadow: inset 0px 1px 0px 0px #f5978e;
+  background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+  background-color: #f24537;
+  border-radius: 6px;
+  border: 1px solid #d02718;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #810e05;
+}
+main .btn:hover {
+  background: linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+  background-color: #c62d1f;
+}
+main .btn:active {
+  position: relative;
+  top: 1px;
+}
+
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+footer .izq_footer {
+  padding-left: 20px;
+}
+footer .img_footer {
+  width: 180px;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+footer .parrafos_footer {
+  width: 30%;
+  text-align: center;
+}
+footer .parrafo_footer {
+  color: aliceblue;
+  padding-top: 23px;
+}
+footer .redes {
+  margin: 30px;
+}
+footer .logo_red {
+  width: 48px;
+  height: auto;
+  margin: 10px;
+}
+footer .logo_red:hover {
+  transform: scale(1.3);
+}
+
+aside {
+  width: 700px;
+  height: auto;
+  background-color: rgb(158, 156, 155);
+}

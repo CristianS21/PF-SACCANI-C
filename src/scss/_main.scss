@@ -1,0 +1,123 @@
+main{
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    .contenedor {
+        height: 465px;
+        width: 350px;
+        -webkit-perspective: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    
+    
+    .tarjeta{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: 2s;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 0 5px rgb(122, 120, 120);
+        border-radius: 10px;
+
+        h3{
+            padding-top: 27px;
+        }
+    }
+    
+    .tarjeta:hover{
+        transform: rotateY(180deg);
+    }
+    .lado {
+        height: 100%;
+        width: 100%;
+
+        backface-visibility: hidden;
+        position: absolute;
+    }
+    
+    .frente {
+        img {
+            width: 250px;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .calificacion{
+            width: 135px;
+        }
+        h2 {
+            color: rgb(24, 23, 23);
+     
+    }
+
+    .bloque_clasificacion{
+        display: flex;
+        flex-direction: column;
+        font-size: 9px;
+        align-content: center;}
+        
+        
+    }
+    
+    .atras {
+        background-color: rgb(175, 175, 171);
+        transform: rotateY(180deg);
+        
+            
+            display: flex;
+            flex-direction: column;
+            
+            justify-content: space-between;
+            align-items: center;
+            
+            li{
+                list-style: none;
+                color: rgb(247, 11, 11);
+            }
+        }
+    }
+
+        .btn{
+            box-shadow:inset 0px 1px 0px 0px #f5978e;
+	        background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	        background-color:#f24537;
+	        border-radius:6px;
+	        border:1px solid #d02718;
+	        display:inline-block;
+	        cursor:pointer;
+	        color:#ffffff;
+	        font-family:Arial;
+	        font-size:15px;
+	        font-weight:bold;
+	        padding:6px 24px;
+	        text-decoration:none;
+	        text-shadow:0px 1px 0px #810e05;
+        }
+        .btn:hover{
+            background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	        background-color:#c62d1f;
+        }
+        .btn:active{
+            position:relative;
+	        top:1px;
+        }
+
+
+    
+}
