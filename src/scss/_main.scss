@@ -39,7 +39,6 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 15px;
         text-align: center;
         box-shadow: 0 0 5px rgb(122, 120, 120);
         border-radius: 10px;
@@ -68,11 +67,14 @@ main {
         .calificacion{
             width: 135px;
         }
-        
+       
+        h3 {
+            margin-top: 20px;
+        }
+
         .h3 {
             color: rgb(15, 15, 15);
-            font-weight: bold;padding-top: 20px;
-           
+            font-weight: bold;
         }
 
 
