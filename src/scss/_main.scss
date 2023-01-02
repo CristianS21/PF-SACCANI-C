@@ -1,4 +1,12 @@
-main{
+main {
+    h2{
+        font-size: 40px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.main{
     margin-bottom: 70px;
     display: flex;
     flex-direction: row;
@@ -36,9 +44,7 @@ main{
         box-shadow: 0 0 5px rgb(122, 120, 120);
         border-radius: 10px;
 
-        h3{
-            padding-top: 27px;
-        }
+
     }
     
     .tarjeta:hover{
@@ -62,10 +68,13 @@ main{
         .calificacion{
             width: 135px;
         }
-        h2 {
-            color: rgb(24, 23, 23);
-     
-    }
+        
+        .h3 {
+            color: rgb(15, 15, 15);
+            font-weight: bold;padding-top: 20px;
+           
+        }
+
 
     .bloque_clasificacion{
         display: flex;

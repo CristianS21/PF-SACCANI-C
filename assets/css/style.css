@@ -8,7 +8,7 @@
 .nav_naranja {
   width: 100%;
   height: 39px;
-  background-color: rgb(245, 177, 52);
+  background-color: hsl(39deg, 86%, 58%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +40,9 @@ h5 {
   color: rgb(17, 17, 17);
   border-right: solid 1px red;
   padding-right: 25px;
+}
+h5:hover {
+  background-color: hsl(39deg, 77%, 68%);
 }
 
 .img_nav {
@@ -81,7 +84,7 @@ h5 {
   border-radius: 3px;
 }
 .nav_rojo li:hover {
-  background-color: rgb(250, 191, 191);
+  background-color: rgb(245, 98, 98);
 }
 
 header img {
@@ -90,7 +93,13 @@ header img {
   margin-bottom: 40px;
 }
 
-main {
+main h2 {
+  font-size: 40px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.main {
   margin-bottom: 70px;
   display: flex;
   flex-direction: row;
@@ -99,7 +108,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
 }
-main .contenedor {
+.main .contenedor {
   height: 465px;
   width: 350px;
   -webkit-perspective: 700;
@@ -108,7 +117,7 @@ main .contenedor {
   align-items: center;
   justify-content: center;
 }
-main .contenedor .tarjeta {
+.main .contenedor .tarjeta {
   height: 100%;
   width: 100%;
   position: relative;
@@ -126,50 +135,49 @@ main .contenedor .tarjeta {
   box-shadow: 0 0 5px rgb(122, 120, 120);
   border-radius: 10px;
 }
-main .contenedor .tarjeta h3 {
-  padding-top: 27px;
-}
-main .contenedor .tarjeta:hover {
+.main .contenedor .tarjeta:hover {
   transform: rotateY(180deg);
 }
-main .contenedor .lado {
+.main .contenedor .lado {
   height: 100%;
   width: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;
 }
-main .contenedor .frente img {
+.main .contenedor .frente img {
   width: 250px;
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-main .contenedor .frente .calificacion {
+.main .contenedor .frente .calificacion {
   width: 135px;
 }
-main .contenedor .frente h2 {
-  color: rgb(24, 23, 23);
+.main .contenedor .frente .h3 {
+  color: rgb(15, 15, 15);
+  font-weight: bold;
+  padding-top: 20px;
 }
-main .contenedor .frente .bloque_clasificacion {
+.main .contenedor .frente .bloque_clasificacion {
   display: flex;
   flex-direction: column;
   font-size: 9px;
   align-content: center;
 }
-main .contenedor .atras {
+.main .contenedor .atras {
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-main .contenedor .atras img {
+.main .contenedor .atras img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
-main .btn {
+.main .btn {
   box-shadow: inset 0px 1px 0px 0px #f5978e;
   background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
   background-color: #f24537;
@@ -185,11 +193,11 @@ main .btn {
   text-decoration: none;
   text-shadow: 0px 1px 0px #810e05;
 }
-main .btn:hover {
+.main .btn:hover {
   background: linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
   background-color: #c62d1f;
 }
-main .btn:active {
+.main .btn:active {
   position: relative;
   top: 1px;
 }
@@ -236,4 +244,58 @@ aside {
   width: 700px;
   height: auto;
   background-color: rgb(158, 156, 155);
+}
+
+section h2 {
+  font-size: 40px;
+  padding-left: 50px;
+  margin-bottom: 100px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+  align-items: center;
+}
+.section .jordan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.section .jordan .img_jordan {
+  width: 65%;
+  border-radius: 5px;
+  margin-bottom: 60px;
+  margin-left: 200px;
+  position: relative;
+}
+.section .jordan .zocalo_jordan {
+  position: absolute;
+  color: white;
+}
+.section .noticias {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.section .noticias .tarjeta_noticia {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.section .noticias .img_noticia {
+  width: 200px;
+  border-radius: 7px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.section .noticias p {
+  font-size: 12px;
+  text-align: center;
 }

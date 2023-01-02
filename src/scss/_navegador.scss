@@ -1,15 +1,12 @@
 
-
 .nav_naranja{
         width: 100%;
         height: 39px;
-        background-color: rgb(245, 177, 52);
+        background-color: hsl(39, 86%, 58%);
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 16%;
-
-      
         
         }
         .etiquetas_nav_naranja{
@@ -17,14 +14,13 @@
             align-items: center;
             padding-left: 20px;
 
-         
+ 
         }
         .centro_nav_naranja {
             display: flex;
             margin-top: 6px;
             align-items: center;
             
-
         }
 
         .der_nav_naranja{
@@ -38,11 +34,13 @@
         h5 {
             font-size: 15px;
             margin-right: 15px;
-        
             margin-top: 6px;
             color: rgb(17, 17, 17);
             border-right: solid 1px red;
             padding-right: 25px;
+            &:hover{
+                background-color: hsl(39, 77%, 68%) ;
+            }
             
         }
 
@@ -92,7 +90,7 @@
         padding: 6px;
         border-radius: 3px;
         &:hover {
-            background-color: rgb(250, 191, 191);
+            background-color: rgb(245, 98, 98);
             
             
         }
