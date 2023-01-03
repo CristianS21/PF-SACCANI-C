@@ -1,54 +1,4 @@
-
-.nav_naranja{
-        width: 100%;
-        height: 39px;
-        background-color: hsl(39, 86%, 58%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 16%;
-        
-        }
-        .etiquetas_nav_naranja{
-            display: flex;
-            align-items: center;
-            padding-left: 20px;
-
- 
-        }
-        .centro_nav_naranja {
-            display: flex;
-            margin-top: 6px;
-            align-items: center;
-            
-        }
-
-        .der_nav_naranja{
-            display: flex;
-            margin-top: 6px;
-            align-items: center;
-
-            
-        }
-
-        h5 {
-            font-size: 15px;
-            margin-right: 15px;
-            margin-top: 6px;
-            color: rgb(17, 17, 17);
-            border-right: solid 1px red;
-            padding-right: 25px;
-            &:hover{
-                background-color: hsl(39, 77%, 68%) ;
-            }
-            
-        }
-
-        .img_nav{
-            height: 25px;
-            margin-right: 15px;
-        }
-    
+  
 
 
 .nav_rojo {
@@ -77,6 +27,8 @@
     h2 {
         color: rgb(247, 246, 246);
         text-shadow: 0 0 7px white;
+        padding-bottom: 13px;
+    
     }
     
     ul {
