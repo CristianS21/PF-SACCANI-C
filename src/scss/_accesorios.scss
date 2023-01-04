@@ -1,0 +1,39 @@
+.contenedor_accesorios{
+    background-color: rgb(228, 223, 223);
+    width: 100%;
+    height: 750px;
+
+    h2{
+        padding-top: 40px;
+        margin-bottom: 0;
+    }
+      .img_pelota {
+        width: 175px;
+        height: 175px;
+      }
+    
+      .img_aro {
+        width: 175px;
+        height: 175px;
+      }
+      
+      .img_camiseta {
+        width: 250px;
+        height: 250px;
+      }
+      
+      #pelotas:checked ~ #imagenes_accesorios .aros .img_aro, 
+      #pelotas:checked ~ #imagenes_accesorios .camisetas .img_camiseta {
+        display: none;
+      }
+      
+      #aros:checked ~ #imagenes_accesorios .pelotas .img_pelota, 
+      #aros:checked ~ #imagenes_accesorios .camisetas .img_camiseta {
+        display: none;
+      }
+      
+      #camisetas:checked ~ #imagenes_accesorios .pelotas .img_pelota, 
+      #camisetas:checked ~ #imagenes_accesorios .aros .img_aro {
+        display: none;
+      }
+}

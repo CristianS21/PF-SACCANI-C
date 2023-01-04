@@ -3,6 +3,7 @@ section{
         font-size: 40px;
         padding-left: 50px;
         margin-bottom: 100px;
+        margin-top: 40px;
     }
 
 
@@ -66,15 +67,14 @@ section{
                 flex-wrap: wrap;
                 box-shadow: 0 0 5px rgb(122, 120, 120);
                 &:hover{
-                    transform: scale(1.2);
-                }
-        
-
+                    transform: scale(1.12);
+                }}
+                
             p{
             font-size: 12px;
             text-align: center;
+            
                 }
             }       
         }
     }
-}
