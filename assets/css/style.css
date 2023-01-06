@@ -164,7 +164,6 @@ main h2 {
   margin-left: 50px;
   margin-bottom: 50px;
   margin-top: 50px;
-  color: red;
 }
 
 .main {
@@ -565,15 +564,20 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   }
 }
 
-.section_dorada {
+.seccion_dorada h2 {
+  color: black;
+  text-shadow: 7px 7px 15px yellow;
+}
+
+.contenedor_principal_dorado {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 70px;
 }
-.section_dorada .tarjetas_doradas {
-  height: 465px;
+.contenedor_principal_dorado .tarjetas_doradas {
+  height: 485px;
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -582,7 +586,7 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   margin-left: 25px;
   margin-right: 25px;
 }
-.section_dorada .tarjetas_doradas .tarjeta_dorada {
+.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada {
   height: 100%;
   width: 100%;
   position: relative;
@@ -591,11 +595,40 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-shadow: 0 0 10px rgb(250, 205, 4);
+  box-shadow: 3px 3px 10px rgb(250, 205, 4);
   border-radius: 10px;
 }
-.section_dorada .tarjetas_doradas .tarjeta_dorada img {
+.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada h4 {
+  margin-top: 20px;
+  font-size: 25px;
+}
+.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada img {
   width: 220px;
+  margin-bottom: 25px;
+}
+.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .calificacion {
+  width: 135px;
+}
+.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .bloque_clasificacion {
+  display: flex;
+  flex-direction: column;
+  font-size: 9px;
+  align-content: center;
+}
+.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .bloque_clasificacion p {
+  font-size: 14px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .bloque_clasificacion a {
+  color: blue;
+}
+.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .h3 {
+  color: black;
+  text-shadow: 7px 7px 15px yellow;
+  font-weight: bold;
+  padding-top: 23px;
+  font-size: 32px;
 }
 
 .boton_dorado {
@@ -612,6 +645,7 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   padding: 6px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffee66;
+  margin-top: 30px;
 }
 
 .boton_dorado:hover {
