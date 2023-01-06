@@ -1,0 +1,61 @@
+
+
+section {
+    overflow: hidden;
+    
+        .contenedor_escudos {
+        display: flex;
+        
+        align-items: center;
+        animation: cambio 350s infinite alternate linear;
+        
+        .grupo_1{
+            display: flex;
+            .img_escudo{
+                width: 100px;
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+        }
+        .grupo_2{
+            display: flex;
+            .img_escudo{
+                width: 100px;
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+        }
+        .grupo_3{
+            display: flex;
+            .img_escudo{
+                width: 100px;
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+        }
+        .grupo_4{
+            display: flex;
+            .img_escudo{
+                display: flex;
+                width: 100px;
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+        }
+    }
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    0%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    25%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    50%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+    
+    }
+}
