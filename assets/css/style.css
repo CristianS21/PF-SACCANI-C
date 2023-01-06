@@ -476,8 +476,8 @@ section {
 section .contenedor_escudos {
   display: flex;
   align-items: center;
-  -webkit-animation: cambio 350s infinite alternate linear;
-          animation: cambio 350s infinite alternate linear;
+  -webkit-animation: cambio_esc 350s infinite alternate linear;
+          animation: cambio_esc 350s infinite alternate linear;
 }
 section .contenedor_escudos .grupo_1 {
   display: flex;
@@ -512,7 +512,33 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   margin-left: 25px;
   margin-right: 25px;
 }
-@keyframes cambio {
+@-webkit-keyframes cambio_esc {
+  0% {
+    margin-left: 0;
+  }
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+@keyframes cambio_esc {
   0% {
     margin-left: 0;
   }

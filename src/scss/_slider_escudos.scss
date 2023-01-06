@@ -7,7 +7,7 @@ section {
         display: flex;
         
         align-items: center;
-        animation: cambio 350s infinite alternate linear;
+        animation: cambio_esc 350s infinite alternate linear;
         
         .grupo_1{
             display: flex;
@@ -44,7 +44,7 @@ section {
         }
     }
 
-@keyframes cambio {
+@keyframes cambio_esc {
     0%{margin-left: 0;}
     0%{margin-left: 0;}
 
