@@ -72,26 +72,18 @@ header .nav_naranja {
   height: 44px;
   background-color: hsl(39deg, 86%, 58%);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 0;
 }
-
-header .nav_naranja .segundas_dos{
-  display: flex;
-  justify-content: space-between;
-}
-
 header .nav_naranja .etiquetas_nav_naranja {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-left: 20px;
 }
 header .nav_naranja .centro_nav_naranja {
   display: flex;
   margin-top: 6px;
-  margin-right: 20px;
   align-items: center;
 }
 header .nav_naranja .der_nav_naranja {
@@ -99,6 +91,11 @@ header .nav_naranja .der_nav_naranja {
   margin-top: 6px;
   align-items: center;
   margin-right: 40px;
+}
+
+header .nav_naranja .segundas_dos{
+  display: flex;
+  gap: 25px;
 }
 header .nav_naranja h6 {
   font-size: 15px;
@@ -299,17 +296,22 @@ footer {
   height: 250px;
   background-color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 200px;
+  
 }
 footer .izq_footer {
   padding-left: 20px;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 footer .img_footer {
   width: 180px;
   height: auto;
-  margin-left: 20px;
+  
   margin-top: 20px;
 }
 footer .parrafos_footer {
@@ -579,9 +581,9 @@ section .contenedor_escudos .grupo_4 .img_escudo {
 
 .seccion_dorada {
   background-color: rgb(255, 254, 242);
-  background-image: url "../img/fondo_dorado.jpg";
   padding-top: 20px;
-  height: 750px;
+  height: auto;
+  padding: 50px;
 }
 .seccion_dorada .contenido_dorado {
   padding-top: 25px;
@@ -594,11 +596,12 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   font-size: 40px;
 }
 .seccion_dorada .contenido_dorado .contenedor_principal_dorado {
-  width: 100%;
+
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  margin-bottom: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 .seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas {
   height: 525px;
@@ -639,6 +642,7 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   font-size: 9px;
   align-content: center;
 }
+
 .seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .bloque_clasificacion p {
   font-size: 14px;
   padding-left: 13px;
@@ -681,6 +685,8 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   top: 1px;
 }
 
+/* RESPONSIVE */
+
 
 @media (max-width: 1000px){
   .nav_rojo .fa-solid {
@@ -715,17 +721,41 @@ section .contenedor_escudos .grupo_4 .img_escudo {
  } 
 
  header .nav_naranja {
-    height: 100px;
+    height: 75px;
     font-size: 10px;
  }
 
  header .nav_naranja .segundas_dos{
   display: flex;
   flex-direction: column;
- }
-  
+  gap: 0;
+ } 
 }
 
-
-
-
+@media (max-width: 665px){
+    
+  footer .img_footer{
+    width: 100px;
+    padding:5px;
+    margin: 0;
+  }
+  footer .logo_red{
+    width: 40px;
+  }
+  footer .parrafos_footer{
+    width: 200px;
+  }
+  footer .redes{
+    padding: 5px;
+    margin: 0;
+  
+  }
+  footer .izq_footer{
+    font-size: 12px;
+    color: red;
+    
+  }
+  .parrafos_footer{
+      font-size: 15px;
+      min-width: 111px;
+    }}
