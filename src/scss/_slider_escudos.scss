@@ -5,9 +5,10 @@ section {
     
         .contenedor_escudos {
         display: flex;
-        
         align-items: center;
+        justify-content: center;
         animation: cambio_esc 350s infinite alternate linear;
+        margin-bottom: 100px;
         
         .grupo_1{
             display: flex;

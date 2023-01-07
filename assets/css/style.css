@@ -8,7 +8,7 @@
 .nav_rojo {
   background-color: rgb(255, 0, 0);
   width: 100%;
-  height: 105px;
+  height: 121px;
   color: rgb(247, 246, 246);
   font-size: 25px;
   display: flex;
@@ -163,11 +163,11 @@ main h2 {
   font-size: 40px;
   margin-left: 50px;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .main {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -176,9 +176,9 @@ main h2 {
   flex-wrap: wrap;
 }
 .main .contenedor_main {
-  height: 465px;
+  height: 525px;
   width: 350px;
-  /*-webkit-perspective: 700;*/
+  -webkit-perspective: 700;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,6 +271,7 @@ main h2 {
   padding: 6px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #810e05;
+  margin: 20px;
 }
 .main .btn:hover {
   background: linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
@@ -335,79 +336,82 @@ aside {
   background-color: rgb(158, 156, 155);
 }
 
-section h2 {
+section .contenido_noticias {
+  padding-top: 30px;
+}
+section .contenido_noticias h2 {
   font-size: 40px;
   padding-left: 50px;
-  margin-bottom: 100px;
-  margin-top: 40px;
+  margin-bottom: 50px;
 }
-section .section {
+section .contenido_noticias .section {
   display: flex;
   flex-direction: row;
-  margin-bottom: 70px;
+  margin-top: 50px;
   align-items: center;
 }
-section .section .jordan {
+section .contenido_noticias .section .jordan {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
 }
-section .section .jordan .contenedor_jordan {
+section .contenido_noticias .section .jordan .contenedor_jordan {
   width: 100%;
   position: relative;
 }
-section .section .jordan .contenedor_jordan .img_jordan {
+section .contenido_noticias .section .jordan .contenedor_jordan .img_jordan {
   width: 65%;
   border-radius: 5px;
   margin-bottom: 60px;
   margin-left: 200px;
   box-shadow: 0 0 5px rgb(122, 120, 120);
 }
-section .section .jordan .zocalo_jordan {
+section .contenido_noticias .section .jordan .zocalo_jordan {
   position: absolute;
   color: rgb(194, 18, 18);
   left: 50%;
   top: 50%;
 }
-section .noticias {
+section .contenido_noticias .noticias {
   width: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 12px;
 }
-section .noticias .tarjeta_noticia {
+section .contenido_noticias .noticias .tarjeta_noticia {
   width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
-section .noticias .tarjeta_noticia .img_noticia {
+section .contenido_noticias .noticias .tarjeta_noticia .img_noticia {
   width: 200px;
   border-radius: 7px;
   justify-content: space-around;
   flex-wrap: wrap;
   box-shadow: 0 0 5px rgb(122, 120, 120);
 }
-section .noticias .tarjeta_noticia .img_noticia:hover {
+section .contenido_noticias .noticias .tarjeta_noticia .img_noticia:hover {
   transform: scale(1.12);
 }
-section .noticias .tarjeta_noticia p {
+section .contenido_noticias .noticias .tarjeta_noticia p {
   font-size: 12px;
   text-align: center;
 }
 
 .jordan_gris {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 
 section .contenedor_contacto {
   background-image: url("../img/fondocontacto.jpg");
   width: 100%;
   height: 640px;
-  padding-top: 30px;
+  padding-top: 69px;
+  margin-top: 80px;
 }
 section .contenedor_contacto form {
   width: 450px;
@@ -475,8 +479,10 @@ section {
 section .contenedor_escudos {
   display: flex;
   align-items: center;
+  justify-content: center;
   -webkit-animation: cambio_esc 350s infinite alternate linear;
           animation: cambio_esc 350s infinite alternate linear;
+  margin-bottom: 100px;
 }
 section .contenedor_escudos .grupo_1 {
   display: flex;
@@ -564,20 +570,31 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   }
 }
 
-.seccion_dorada h2 {
-  color: black;
-  text-shadow: 7px 7px 15px yellow;
+.seccion_dorada {
+  background-color: rgb(255, 254, 242);
+  background-image: url "../img/fondo_dorado.jpg";
+  padding-top: 20px;
+  height: 750px;
 }
-
-.contenedor_principal_dorado {
+.seccion_dorada .contenido_dorado {
+  padding-top: 25px;
+}
+.seccion_dorada .contenido_dorado h2 {
+  color: black;
+  text-shadow: 7px 7px 35px yellow;
+  margin-bottom: 50px;
+  padding-left: 30px;
+  font-size: 40px;
+}
+.seccion_dorada .contenido_dorado .contenedor_principal_dorado {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
-.contenedor_principal_dorado .tarjetas_doradas {
-  height: 485px;
+.seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas {
+  height: 525px;
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -586,7 +603,7 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   margin-left: 25px;
   margin-right: 25px;
 }
-.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada {
+.seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada {
   height: 100%;
   width: 100%;
   position: relative;
@@ -598,32 +615,32 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   box-shadow: 3px 3px 10px rgb(250, 205, 4);
   border-radius: 10px;
 }
-.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada h4 {
+.seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada h4 {
   margin-top: 20px;
   font-size: 25px;
 }
-.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada img {
+.seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada img {
   width: 220px;
   margin-bottom: 25px;
 }
-.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .calificacion {
+.seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .calificacion {
   width: 135px;
 }
-.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .bloque_clasificacion {
+.seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .bloque_clasificacion {
   display: flex;
   flex-direction: column;
   font-size: 9px;
   align-content: center;
 }
-.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .bloque_clasificacion p {
+.seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .bloque_clasificacion p {
   font-size: 14px;
   padding-left: 13px;
   padding-right: 13px;
 }
-.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .bloque_clasificacion a {
+.seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .bloque_clasificacion a {
   color: blue;
 }
-.contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .h3 {
+.seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada .h3 {
   color: black;
   text-shadow: 7px 7px 15px yellow;
   font-weight: bold;
@@ -649,7 +666,7 @@ section .contenedor_escudos .grupo_4 .img_escudo {
 }
 
 .boton_dorado:hover {
-  background-color: #ffab23;
+  background-color: #ecf006;
 }
 
 .boton_dorado:active {
