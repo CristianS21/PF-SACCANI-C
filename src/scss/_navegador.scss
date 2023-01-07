@@ -15,6 +15,9 @@
     
     .nav_izq {
         margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     img {
@@ -31,9 +34,15 @@
     
     }
     
+    .fa-solid { 
+        display: none; 
+    }
+
     ul {
         display: flex;
         justify-content: end;
+
+        
     }
         
     li {
@@ -49,3 +58,4 @@
     }
    
 }
+

@@ -17,6 +17,9 @@
 }
 .nav_rojo .nav_izq {
   margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .nav_rojo img {
   width: 100px;
@@ -28,6 +31,9 @@
   color: rgb(247, 246, 246);
   text-shadow: 0 0 7px white;
   padding-bottom: 13px;
+}
+.nav_rojo .fa-solid {
+  display: none;
 }
 .nav_rojo ul {
   display: flex;
@@ -66,21 +72,27 @@ header .nav_naranja {
   height: 44px;
   background-color: hsl(39deg, 86%, 58%);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 16%;
   margin: 0;
 }
+
+header .nav_naranja .segundas_dos{
+  display: flex;
+  justify-content: space-between;
+}
+
 header .nav_naranja .etiquetas_nav_naranja {
   display: flex;
   align-items: center;
-  margin-left: 40px;
+  justify-content: space-around;
+  padding-left: 20px;
 }
 header .nav_naranja .centro_nav_naranja {
   display: flex;
   margin-top: 6px;
+  margin-right: 20px;
   align-items: center;
-  margin-right: 170px;
 }
 header .nav_naranja .der_nav_naranja {
   display: flex;
@@ -178,7 +190,7 @@ main h2 {
 .main .contenedor_main {
   height: 525px;
   width: 350px;
-  -webkit-perspective: 700;
+  /*-webkit-perspective: 700;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -468,11 +480,6 @@ section .contenedor_contacto form button:active {
   top: 1px;
 }
 
-@media (max-width: 480px) {
-  form {
-    width: 100%;
-  }
-}
 section {
   overflow: hidden;
 }
@@ -673,3 +680,52 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   position: relative;
   top: 1px;
 }
+
+
+@media (max-width: 1000px){
+  .nav_rojo .fa-solid {
+    display: block;
+    padding-right: 6%;
+    font-size: 44px;
+  } 
+
+  .nav_rojo .fa-solid:hover + ul{
+     right: 0; 
+  }
+  
+
+  .nav_rojo ul{
+    background-color: rgba(247, 5, 5, 0.75);
+    position: fixed;
+    top: 30px;
+    right: -300px;
+    display: flex;
+    flex-direction: column;
+    padding: 65px;
+    border-radius: 3px;
+    padding-bottom: 25px;
+    transition: 1.5s;
+  }
+  .nav_rojo .fa-solid:hover + ul{
+    right: 0; 
+ }
+ 
+ .nav_rojo ul:hover{
+   right: 0;
+ } 
+
+ header .nav_naranja {
+    height: 100px;
+    font-size: 10px;
+ }
+
+ header .nav_naranja .segundas_dos{
+  display: flex;
+  flex-direction: column;
+ }
+  
+}
+
+
+
+
