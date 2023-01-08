@@ -344,6 +344,7 @@ footer .logo_red:hover {
     padding-left: 25px;
   }
 }
+
 aside {
   width: 700px;
   height: auto;
@@ -360,39 +361,29 @@ section .contenido_noticias h2 {
 }
 section .contenido_noticias .section {
   display: flex;
-  flex-direction: row;
   margin-top: 50px;
   align-items: center;
+  justify-content: center;
 }
-section .contenido_noticias .section .jordan {
+
+section .contenido_noticias .section .jordan .contenedor_jordan{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 50%;
-}
-section .contenido_noticias .section .jordan .contenedor_jordan {
-  width: 100%;
-  position: relative;
+  justify-content: center;
 }
 section .contenido_noticias .section .jordan .contenedor_jordan .img_jordan {
-  width: 65%;
+  width: 70%;
   border-radius: 5px;
   margin-bottom: 60px;
-  margin-left: 200px;
   box-shadow: 0 0 5px rgb(122, 120, 120);
 }
-section .contenido_noticias .section .jordan .zocalo_jordan {
-  position: absolute;
-  color: rgb(194, 18, 18);
-  left: 50%;
-  top: 50%;
-}
+
 section .contenido_noticias .noticias {
   width: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 30px;
 }
 section .contenido_noticias .noticias .tarjeta_noticia {
   width: 250px;
@@ -402,7 +393,7 @@ section .contenido_noticias .noticias .tarjeta_noticia {
   gap: 8px;
 }
 section .contenido_noticias .noticias .tarjeta_noticia .img_noticia {
-  width: 200px;
+  width: 250px;
   border-radius: 7px;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -586,14 +577,18 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   padding: 50px;
 }
 .seccion_dorada .contenido_dorado {
-  padding-top: 25px;
+  padding-top: 0;
 }
 .seccion_dorada .contenido_dorado h2 {
   color: black;
-  text-shadow: 7px 7px 35px yellow;
+  text-shadow: 7px 7px 45px yellow;
   margin-bottom: 50px;
   padding-left: 30px;
   font-size: 40px;
+}
+
+.seccion_dorada .contenido_dorado h4{
+  text-shadow: 0 0 10px yellow;
 }
 .seccion_dorada .contenido_dorado .contenedor_principal_dorado {
 
@@ -622,7 +617,7 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-shadow: 3px 3px 10px rgb(250, 205, 4);
+  box-shadow: 10px 10px 30px rgb(250, 205, 4);
   border-radius: 10px;
 }
 .seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada h4 {
@@ -687,6 +682,38 @@ section .contenedor_escudos .grupo_4 .img_escudo {
 
 /* RESPONSIVE */
 
+
+@media (max-width: 1260px){
+  section .contenido_noticias .section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section .noticias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section .jordan .img_jordan{
+    margin: auto;
+   
+  }
+  section .contenido_noticias .noticias {
+    width: 100%;
+    gap: 5px;
+  }
+  section .contenido_noticias .noticias .tarjeta_noticia {
+    width: 45%;  
+  }
+
+  section .contenido_noticias .noticias .tarjeta_noticia .img_noticia{
+    width: 82%;
+  }
+  
+}
 
 @media (max-width: 1000px){
   .nav_rojo .fa-solid {
@@ -753,6 +780,7 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   footer .izq_footer{
     font-size: 12px;
     color: red;
+    padding-left: 4%;
     
   }
   .parrafos_footer{
