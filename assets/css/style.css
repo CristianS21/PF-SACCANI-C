@@ -77,6 +77,7 @@ header .slider ul li {
 header .slider ul img {
   width: 100%;
   height: 500px;
+  object-fit: cover;
 }
 header .nav_naranja {
   width: 100%;
@@ -87,6 +88,9 @@ header .nav_naranja {
   align-items: center;
   margin-bottom: 20px;
 }
+
+
+
 header .nav_naranja .etiquetas_nav_naranja {
   display: flex;
   align-items: center;
@@ -405,7 +409,7 @@ section .contenido_noticias .noticias {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 14px;
 }
 section .contenido_noticias .noticias .tarjeta_noticia {
   width: 250px;
@@ -437,6 +441,10 @@ section .contenido_noticias .noticias .tarjeta_noticia p {
 
 .jordan_gris {
   margin-bottom: 75px;
+}
+
+.jordan_gris img{
+  width: 100%;
 }
 
 section .contenedor_contacto {
@@ -516,7 +524,9 @@ section .contenedor_escudos .grupo_1 {
   display: flex;
 }
 section .contenedor_escudos .grupo_1 .img_escudo {
-  width: 100px;
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -524,7 +534,9 @@ section .contenedor_escudos .grupo_2 {
   display: flex;
 }
 section .contenedor_escudos .grupo_2 .img_escudo {
-  width: 100px;
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -532,7 +544,9 @@ section .contenedor_escudos .grupo_3 {
   display: flex;
 }
 section .contenedor_escudos .grupo_3 .img_escudo {
-  width: 100px;
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -540,7 +554,9 @@ section .contenedor_escudos .grupo_4 {
   display: flex;
 }
 section .contenedor_escudos .grupo_4 .img_escudo {
-  width: 100px;
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -619,12 +635,11 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   text-shadow: 0 0 10px yellow;
 }
 .seccion_dorada .contenido_dorado .contenedor_principal_dorado {
-
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
+
 }
 .seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas {
   height: 525px;
@@ -633,8 +648,8 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin: 40px 17px 0 17px;
+
 }
 .seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada {
   height: 100%;
@@ -726,11 +741,18 @@ section .contenedor_escudos .grupo_4 .img_escudo {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 15px;
   }
 
+  section .contenido_noticias .noticias .tarjeta_noticia{
+    
+    background-color: rgb(245, 244, 244);
+    border-radius: 4px;
+  }
+ 
   .section .jordan .img_jordan{
     margin: auto;
-   
+  
   }
   section .contenido_noticias .noticias {
     width: 100%;
@@ -738,10 +760,12 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   }
   section .contenido_noticias .noticias .tarjeta_noticia {
     width: 45%;  
+    padding: 20px;
   }
 
   section .contenido_noticias .noticias .tarjeta_noticia .img_noticia{
     width: 82%;
+    border-radius: 0;
   }
   
   section .contenido_noticias .noticias .tarjeta_noticia p{
@@ -782,19 +806,36 @@ section .contenedor_escudos .grupo_4 .img_escudo {
  } 
 
  header .nav_naranja {
-    height: 75px;
+    height: 105px;
     font-size: 10px;
+    display: flex;
+    flex-direction: column;
  }
 
+ header .nav_naranja .centro_nav_naranja h6{
+  font-size: 23px;
+ }
+
+
+
+ header .nav_naranja .der_nav_naranja h6{
+  font-size: 23px;
+ }
+ 
  header .nav_naranja .segundas_dos{
-  display: flex;
-  flex-direction: column;
+  
   gap: 0;
  } 
 }
 
 @media (max-width: 665px){
     
+  footer{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  
   footer .img_footer{
     width: 100px;
     padding:5px;
@@ -804,18 +845,28 @@ section .contenedor_escudos .grupo_4 .img_escudo {
     width: 40px;
   }
   footer .parrafos_footer{
-    width: 200px;
+    width: 75%;
+    gap: 0;
+    margin-top: 17px;
+    margin-bottom: 17px;
   }
+
+  footer .parrafo_footer{
+  padding: 3px;
+font-size: 15px;}
 
   footer .redes{
     padding: 5px;
     margin: 0;
+    display: flex;
+    flex-direction: row;
   
   }
   footer .izq_footer{
     font-size: 12px;
     color: red;
     padding-left: 4%;
+    padding-top: 10px;
     
   }
   .parrafos_footer{
