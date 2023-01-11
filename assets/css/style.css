@@ -30,7 +30,7 @@
   margin-left: 20px;
   margin-top: 20px;
 }
-.nav_rojo h2 {
+.nav_rojo h1 {
   color: rgb(247, 246, 246);
   text-shadow: 0 0 7px white;
   padding-bottom: 13px;
@@ -62,31 +62,38 @@
 
 header .slider {
   overflow: hidden;
+
 }
 header .slider ul {
   -webkit-animation: cambio 26s infinite alternate linear;
           animation: cambio 26s infinite alternate linear;
   display: flex;
-  width: 400%;
+  width: 400%;  
 }
+
 header .slider ul li {
   list-style: none;
   width: 100%;
-  height: 500px;
+  object-fit: contain;
+
+
 }
 header .slider ul img {
   width: 100%;
-  height: 500px;
+  height: 640px;
   object-fit: cover;
+
 }
 header .nav_naranja {
   width: 100%;
-  height: 44px;
+  height: 45px;
   background-color: hsl(39deg, 86%, 58%);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: -4px;
+  gap: 17px;
+  
 }
 
 
@@ -451,7 +458,7 @@ section .contenedor_contacto {
   background-image: url("../img/fondocontacto.jpg");
   width: 100%;
   height: 640px;
-  padding-top: 80px;
+  padding-top: 57px;
 }
 section .contenedor_contacto form {
   width: 450px;
@@ -746,7 +753,7 @@ section .contenedor_escudos .grupo_4 .img_escudo {
 
   section .contenido_noticias .noticias .tarjeta_noticia{
     
-    background-color: rgb(245, 244, 244);
+    background-color: rgb(226, 223, 223);
     border-radius: 4px;
   }
  
@@ -806,10 +813,11 @@ section .contenedor_escudos .grupo_4 .img_escudo {
  } 
 
  header .nav_naranja {
-    height: 105px;
+    height: 125px;
     font-size: 10px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
  }
 
  header .nav_naranja .centro_nav_naranja h6{
