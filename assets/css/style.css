@@ -99,7 +99,7 @@ header .nav_naranja {
   align-items: center;
   margin-top: -4px;
   gap: 17px;
-  
+  margin-bottom: -80px;
 }
 
 
@@ -200,12 +200,15 @@ header .nav_naranja .img_nav {
 
 main {
   padding-top: 10px;
+  
 }
 main h2 {
   font-size: 40px;
   margin-left: 50px;
   margin-bottom: 50px;
-  margin-top: 50px;
+  padding-top: 135px;
+  
+
 }
 
 .main {
@@ -227,6 +230,7 @@ main h2 {
   align-items: center;
   justify-content: center;
 }
+
 .main .contenedor_main .tarjeta_main {
   height: 100%;
   width: 100%;
@@ -236,9 +240,6 @@ main h2 {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center;
   box-shadow: 0 0 5px rgb(122, 120, 120);
@@ -250,8 +251,7 @@ main h2 {
 .main .contenedor_main .lado {
   height: 100%;
   width: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   position: absolute;
 }
 .main .contenedor_main .frente img {
@@ -289,11 +289,8 @@ main h2 {
 }
 .main .contenedor_main .atras {
   transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
+
 .main .contenedor_main .atras img {
   width: 100%;
   height: 100%;
@@ -389,8 +386,9 @@ aside {
 }
 
 section .contenido_noticias {
-  padding-top: 30px;
-  margin-top: 15px;
+  padding-top: 130px;
+
+  
   margin-bottom: 50px;
 }
 section .contenido_noticias h2 {
@@ -464,7 +462,8 @@ section .contenedor_contacto {
   background-image: url("../img/fondocontacto.jpg");
   width: 100%;
   height: 640px;
-  padding-top: 57px;
+  padding-top: 90px;
+  margin-top: 50px;
 }
 section .contenedor_contacto form {
   width: 450px;
@@ -531,7 +530,7 @@ section .contenedor_escudos {
   justify-content: center;
   -webkit-animation: cambio_esc 350s infinite alternate linear;
           animation: cambio_esc 350s infinite alternate linear;
-  margin-bottom: 70px;
+
 }
 section .contenedor_escudos .grupo_1 {
   display: flex;
@@ -627,14 +626,14 @@ section .contenedor_escudos .grupo_4 .img_escudo {
 }
 
 .seccion_dorada {
-  background-color: rgb(255, 254, 242);
-  padding-top: 20px;
+  background-color: rgb(255, 254, 247);
   height: auto;
-  padding: 50px;
+
   margin-bottom: 15px;
 }
 .seccion_dorada .contenido_dorado {
-  padding-top: 0;
+  padding-top: 145px;
+
 }
 .seccion_dorada .contenido_dorado h2 {
   color: black;
@@ -743,6 +742,7 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   section .contenido_noticias .section {
     display: flex;
     flex-direction: column;
+  
   }
 
   footer .parrafo_footer {
