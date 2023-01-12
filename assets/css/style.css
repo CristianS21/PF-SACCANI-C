@@ -86,7 +86,7 @@ header .slider ul li {
 header .slider ul img {
   width: 100%;
   margin-top: 120px;
-  height: 640px;
+  height: 630px;
   object-fit: cover;
 
 }
@@ -259,8 +259,8 @@ main h2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
- .calificacion {
-  width: 135px;
+.main .contenedor_main .frente .calificacion {
+  width: 115px;
 }
 .main .contenedor_main .frente h4 {
   margin-top: 20px;
@@ -442,9 +442,7 @@ section .contenido_noticias .noticias .tarjeta_noticia p {
   text-align: center;
 }
 
-.jordan_gris {
-  margin-bottom: 75px;
-}
+
 
 .jordan_gris img{
   width: 100%;
@@ -515,6 +513,9 @@ section .contenedor_contacto form button:active {
 
 section {
   overflow: hidden;
+  background-color: rgb(255, 254, 247);
+  padding-top: 30px;
+  
 }
 section .contenedor_escudos {
   display: flex;
@@ -529,7 +530,6 @@ section .contenedor_escudos .grupo_1 {
 }
 section .contenedor_escudos .grupo_1 .img_escudo {
   width: 120px;
-  height: 80px;
   object-fit: contain;
   margin-left: 25px;
   margin-right: 25px;
@@ -539,7 +539,6 @@ section .contenedor_escudos .grupo_2 {
 }
 section .contenedor_escudos .grupo_2 .img_escudo {
   width: 120px;
-  height: 80px;
   object-fit: contain;
   margin-left: 25px;
   margin-right: 25px;
@@ -549,7 +548,6 @@ section .contenedor_escudos .grupo_3 {
 }
 section .contenedor_escudos .grupo_3 .img_escudo {
   width: 120px;
-  height: 80px;
   object-fit: contain;
   margin-left: 25px;
   margin-right: 25px;
@@ -559,7 +557,6 @@ section .contenedor_escudos .grupo_4 {
 }
 section .contenedor_escudos .grupo_4 .img_escudo {
   width: 120px;
-  height: 80px;
   object-fit: contain;
   margin-left: 25px;
   margin-right: 25px;
@@ -620,16 +617,15 @@ section .contenedor_escudos .grupo_4 .img_escudo {
 .seccion_dorada {
   background-color: rgb(255, 254, 247);
   height: auto;
-
   margin-bottom: 15px;
 }
 .seccion_dorada .contenido_dorado {
-  padding-top: 145px;
+  padding-top: 100px;
 
 }
 .seccion_dorada .contenido_dorado h2 {
   color: black;
-  text-shadow: 7px 7px 45px yellow;
+  text-shadow: 2px 2px 35px yellow;
   margin-bottom: 50px;
   padding-left: 30px;
   font-size: 40px;
@@ -664,7 +660,7 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-shadow: 10px 10px 30px rgb(250, 205, 4);
+  box-shadow: 7px 7px 22px rgb(250, 205, 4);
   border-radius: 10px;
 }
 .seccion_dorada .contenido_dorado .contenedor_principal_dorado .tarjetas_doradas .tarjeta_dorada h4 {
@@ -776,7 +772,7 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1050px){
   .nav_rojo .fa-solid {
     display: block;
     padding-right: 6%;
