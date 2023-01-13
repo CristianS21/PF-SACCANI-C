@@ -817,7 +817,7 @@ section .contenedor_escudos .grupo_4 .img_escudo {
  right: 0;
 } 
 }
-@media (max-width: 100px){
+@media (max-width: 1000px){
   .nav_rojo .fa-solid {
     display: block;
     padding-right: 6%;
