@@ -20,6 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 2000;
 
 }
 .nav_rojo .nav_izq {
@@ -74,6 +75,7 @@ header .slider ul {
           animation: cambio 26s infinite alternate linear;
   display: flex;
   width: 400%;  
+  
 }
 
 header .slider ul li {
@@ -88,7 +90,8 @@ header .slider ul img {
   margin-top: 120px;
   height: 630px;
   object-fit: cover;
-
+  position: relative;
+  z-index: 1001;
 }
 header .nav_naranja {
   width: 100%;
@@ -349,7 +352,7 @@ footer .parrafo_footer {
   
 }
 footer .redes {
-  margin: 30px;
+  margin: 30px 50px 30px 30px;
 }
 footer .logo_red {
   width: 48px;
@@ -448,6 +451,7 @@ section .contenido_noticias .noticias .tarjeta_noticia p {
   width: 100%;
 }
 
+
 section .contenedor_contacto {
   background-image: url("../img/fondocontacto.jpg");
   width: 100%;
@@ -542,6 +546,8 @@ section .contenedor_escudos .grupo_2 .img_escudo {
   object-fit: contain;
   margin-left: 25px;
   margin-right: 25px;
+  position: relative;
+  z-index: 1001;
 }
 section .contenedor_escudos .grupo_3 {
   display: flex;
@@ -551,15 +557,20 @@ section .contenedor_escudos .grupo_3 .img_escudo {
   object-fit: contain;
   margin-left: 25px;
   margin-right: 25px;
+  position: relative;
+  z-index: 1001;
 }
 section .contenedor_escudos .grupo_4 {
   display: flex;
+  
 }
 section .contenedor_escudos .grupo_4 .img_escudo {
   width: 120px;
   object-fit: contain;
   margin-left: 25px;
   margin-right: 25px;
+  position: relative;
+  z-index: 1001;
 }
 @-webkit-keyframes cambio_esc {
   0% {
@@ -772,7 +783,41 @@ section .contenedor_escudos .grupo_4 .img_escudo {
   }
 }
 
-@media (max-width: 1050px){
+
+
+@media (max-width: 1160px){
+.nav_rojo .fa-solid {
+  display: block;
+  padding-right: 6%;
+  font-size: 44px;
+} 
+
+.nav_rojo .fa-solid:hover + ul{
+   right: 0; 
+}
+
+
+.nav_rojo ul{
+  background-color: rgba(247, 5, 5, 0.75);
+  position: fixed;
+  top: 30px;
+  right: -300px;
+  display: flex;
+  flex-direction: column;
+  padding: 65px;
+  border-radius: 3px;
+  padding-bottom: 25px;
+  transition: 1.5s;
+}
+.nav_rojo .fa-solid:hover + ul{
+  right: 0; 
+}
+
+.nav_rojo ul:hover{
+ right: 0;
+} 
+}
+@media (max-width: 100px){
   .nav_rojo .fa-solid {
     display: block;
     padding-right: 6%;
